@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EntreVestor</string>
+    <string name="username">Username</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+</resources>

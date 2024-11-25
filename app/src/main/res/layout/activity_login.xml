@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    android:fitsSystemWindows="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity">
+
+
+    <View
+        android:id="@+id/dim_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lite_black"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:text="Welcome Back"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Please Enter Your Information"
+        android:textColor="@color/colorWhite"
+        android:textColorLink="#FDFDFA" />
+
+    <EditText
+        android:id="@+id/editTextLoginUsername"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textViewInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="#30F1F1F4"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:hint="User Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#FDFDFA"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/editTextLoginUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="#30F1F1F4"
+        android:drawableStart="@drawable/baseline_key_24"
+        android:drawableEnd="@drawable/baseline_eye_24"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me?"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:buttonTint="@color/white"
+        android:layout_below="@+id/editTextLoginPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:alpha=".8"
+        android:textSize="14sp"
+        android:layout_below="@+id/editTextLoginPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="362dp"
+        android:layout_height="77dp"
+        android:layout_below="@+id/editTextLoginPassword"
+        android:layout_alignStart="@+id/editTextLoginPassword"
+        android:layout_alignEnd="@+id/editTextLoginPassword"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@null"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:alpha=".8"
+        android:text="Register Now?"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+</RelativeLayout>
